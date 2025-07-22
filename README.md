@@ -40,6 +40,28 @@ O projeto foi construído com uma arquitetura cliente-servidor, utilizando **Go 
     * **JavaScript (Vanilla):** Manipulação do DOM, gerenciamento de eventos de clique e comunicação com o backend via `fetch`.
 
 ---
+
+##  Como Executar o Projeto
+
+Para rodar o jogo em sua máquina local, siga os passos abaixo:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    cd seu-repositorio
+    ```
+
+2.  **Execute o servidor Backend:**
+    Certifique-se de que você tem o [Go](https://go.dev/doc/install) instalado. No terminal, dentro da pasta do projeto, rode o comando:
+    ```bash
+    go run main.go
+    ```
+    Você deverá ver a mensagem: `Servidor rodando em http://localhost:8081`
+
+3.  **Abra o Jogo:**
+    Abra seu navegador de preferência e acesse a URL:
+    [http://localhost:8081](http://localhost:8081)
+
 ## 👥 Autores
 
 * Eduarda da Silva Pouzada
