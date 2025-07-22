@@ -47,8 +47,8 @@ Para rodar o jogo em sua máquina local, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-    cd seu-repositorio
+    git clone [https://github.com/vitoriasarda/The-Room-13.git](https://github.com/vitoriasarda/The-Room-13.git)
+    cd The-Room-13
     ```
 
 2.  **Execute o servidor Backend:**
@@ -61,6 +61,7 @@ Para rodar o jogo em sua máquina local, siga os passos abaixo:
 3.  **Abra o Jogo:**
     Abra seu navegador de preferência e acesse a URL:
     [http://localhost:8081](http://localhost:8081)
+
 
 ## 👥 Autores
 
