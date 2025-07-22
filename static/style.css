@@ -1,0 +1,413 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.room{
+    position: relative;
+    width: 60%; height: 70%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 18px; 
+    box-shadow: 1px 1px 10px 10px rgb(26, 26, 26);}
+
+.pagina-entrar{
+    width: 100%; height: 100%;
+    background-image: url(/static/imgs/tela-entrar.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    border-radius: 18px;}
+
+.pagina-entrar .button-entrar{
+    border: none;
+    background-color: transparent;
+    width: 230px; height: 110px;
+    position: absolute;
+    top: 61%; left: 10%;
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18pt;}
+
+
+.arrow-left{
+    position: absolute;
+    right: 94%; top: 30%;}
+
+.arrow-right{
+    position: absolute;
+    left: 94%; top: 30%;}
+
+.inventario{
+    width: 50px; height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/static/imgs/inventario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 10px rgb(26, 26, 26);
+}
+
+.inventario .itens{ 
+    margin: auto;
+    width: 50px; height: 60px;
+}
+
+.selecionada {
+    outline: 3px dashed rgb(243, 205, 14);
+}    
+
+.objeto{
+    position: absolute;
+    cursor: pointer;}
+
+/*! PAREDE 1*/
+.parede1{
+    width: 100%; height: 100%;
+    background-image: url(/static/imgs/parede1-saida.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    border-radius: 18px;}
+
+.porta{
+    position: absolute;
+    top: 31%; left: 6.89%;
+}    
+
+.porta-aberta{
+    position: absolute;
+    top: 29.4%; left: 6.89%;
+    display: none;
+}
+.quadro-chave{
+    position: absolute;
+    width: 80px; height: 80px;
+    top: 30%; left: 44%;}
+
+.quadro{
+    width: 80px; height: 80px;
+    top: 25%; left: 44%;
+    transition: transform 1s;}
+
+.almofada-preta{
+    position: absolute;
+    top: 58%; left: 57%;
+    transition: transform 0.5s;
+    width: 120px; height: 120px;}
+
+.almofada-branca{
+    position: absolute;
+    top: 63%; left: 63%;
+    transition:transform 0.5s;
+    width: 80px; height: 80px;}
+
+.armario{
+    width: 176px;
+    height: 120px;
+    position: relative;
+    top: 70%; left: 35%;}
+
+.armario .armarioofc{
+    position: absolute;
+    top: -89%; left: -84%;
+    transform: scale(0.45);}
+
+.armario .armario-aberto{
+    position: absolute;
+    top: -52%; left: -88.5%;
+    transform: scale(0.64);
+    display: none;}
+
+.diario{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 74.5%; left: 46%;
+    z-index: 2;
+    display: none;
+}
+
+.diariopag1{
+    position: absolute;
+    top: 6%; left: 15%;
+    z-index: 2;
+    display: none;
+}
+
+.diario-right{
+    position: absolute;
+    top: 75%; left: 80%;
+    transform: scale(0.5);
+    z-index: 2;
+}
+
+.close{
+    position: absolute;
+    bottom: 92%; left: 89%;
+    display: none;
+
+}
+
+.diariopag2{
+    position: absolute;
+    top: 6%; left: 15%;
+    z-index: 2;
+    display: none;
+}
+
+.diario-left{
+    position: absolute;
+    top: 75%; left: 1%;
+    transform: scale(0.49);
+    z-index: 2;
+}
+
+
+/*! PAREDE 2*/    
+.parede2{
+    width: 100%; height: 100%;
+    background-image: url(/static/imgs/pagina2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    display: none;}
+
+.parede2 .radio{
+    position: absolute;
+    left: 20%;
+    top: 75%;
+}    
+
+.parede2 .tv{
+    position: absolute;
+    left: 61%;
+    top: 36%;
+}
+
+.parede2 .videoTV{
+    display: none;
+    position: absolute;
+    left: 56.4%;
+    top: 25.5%;
+}
+
+.livro-parede2{
+    position: absolute;
+    top: 55.3%; left: 24%;
+    transition: transform 0.5s;
+}
+
+.parede2 .itens-pequenos{
+    position: absolute;
+    top: 39%;left: 30%;
+    transition: transform 0.5s;
+}
+
+.parede2 .camera{
+    position: absolute;
+    top: 78.8%; left: 31.5%;
+    transition: transform 0.5s;
+}
+
+.parede2 .abajur{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 52%; left: 45%;
+}
+
+.parede2 .cafe{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 66.5%; left: 51.5%;
+}
+
+.parede2 .quadro-parede2{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 22%; left:80%;
+}
+
+.parede2 .papel{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 92%; left: 54.95%;
+}
+
+/*! PAREDE 3*/
+.parede3{
+    width: 100%; height: 100%;
+    background-image: url(/static/imgs/parede4.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    border-radius: 18px;
+    display: none;}
+
+.parede3 .cofre{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 20%; left: 30%;
+    z-index: 1;
+}
+.cofre-aberto-tamanho {
+    width: 250px;
+    height: auto;
+}
+
+.anel {
+    position: absolute;
+    top: 27%;
+    left: 38%;
+    width: 40px;
+    height: auto;
+    z-index: 2;
+    display: none;
+    cursor: pointer;
+}
+
+.zoom-anel {
+    transform: scale(2);
+    transition: transform 0.3s;
+}
+
+.parede3 .display-senha{
+    background-color: rgb(0, 0, 0);
+    width: 34px; height: 18px;
+    position: absolute;
+    top: 26%; left: 34.8%;
+    z-index: 2;
+    border-radius: 3px;
+    color: white;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parede3 .cofre-digitos{
+    width: 32px; height: 38px;
+    position: absolute;
+    top: 31%; left: 34%;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2px;
+}
+
+.parede3 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parede3 .digitos{
+    width: 10px; height: 11px;
+    text-align: center;
+}
+
+.parede3 .quadro-parede3{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 20%; left: 30%;
+    z-index: 3;
+}
+
+.parede3 .dados{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 67%; left: 14%;
+}
+
+.parede3 .planta{
+    transition: transform 0.5s;
+    position: absolute;
+    top: 74%; left: 52%;
+}
+
+/*! PAREDE 4*/    
+.parede4{
+    width: 100%; height: 100%;
+    background-image: url(/static/imgs/parede3.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    border-radius: 18px;
+    display: none;}
+
+.parede4 .relogio-parede4{
+    position: absolute;
+    top: 20%; left: 32%;
+    transition: transform 0.5s;
+    z-index: 2;
+}
+
+.chave{
+    width: 50px; height: 50px;
+    top: 20%; left: 34%;
+}
+
+.parede4 .almofada1{
+     position: absolute;
+    top: 64%; left: 21%;
+    transition: transform 0.5s;
+}
+
+.parede4 .almofada2{
+    position: absolute;
+    top: 66%; left: 26%;
+    transition: transform 0.5s;
+}
+
+.parede4 .quadro1{
+    position: absolute;
+    top: 25%; left: 65%;
+    transition: transform 0.5s;
+}
+
+.parede4 .quadro2{
+    position: absolute;
+    top: 29%; left:75%;
+    transition: transform 0.5s;
+}
+
+.pagina-final{
+    width: 100%; height: 100%;
+    background-image: url(/static/imgs/escaperoom-FINAL.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    border-radius: 18px;
+    display: none;
+}
+
+/*! ANIMAÇÕES */
+.cima{
+    transform: translateY(-38%);
+    transition: transform 0.5s;}
+
+.esquerda{
+    transform: translateX(50%);
+    transition: transform 0.5s;}
+
+.direita{
+    transform: translateX(-50%);
+    transition: transform 0.5s;}
+
+.esquerda-quadro-cofre{
+    transform: translateX(80%);
+    transition: transform 0.5s;
+}    
+
+.zoom{
+    transform: scale(3);
+    transition: transform 1s;}
+
+.zoomCofre{
+    transform: scale(4);
+    transition: transform 0.5s;
+}    
