@@ -32,7 +32,7 @@ O projeto foi construído com uma arquitetura cliente-servidor, utilizando **Go 
 
 * **Backend:** **Go (Golang)**
     * Criação de um servidor web HTTP nativo.
-    * Definição de rotas (API) para gerenciar as ações do jogador (`/pegar-chave`, `/armario`, etc.).
+    * Definição de rotas (API) para gerenciar as ações do jogador (`/pegar-chave`, `/armario`, `/pegar-diario`, etc.).
     * Gerenciamento do estado do jogo (itens coletados, sala atual).
 * **Frontend:**
     * **HTML5:** Estruturação de todos os elementos do jogo.
